@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "dotnet-config2json": {
+      "commandName": "Project",
+      "commandLineArgs": "--help"
+    }
+  }
+}

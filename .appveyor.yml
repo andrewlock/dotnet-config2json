@@ -1,0 +1,42 @@
+version: 0.2.1-rtm.{build}
+install:
+  - ps: iwr https://raw.githubusercontent.com/dotnet/cli/release/2.1.3xx/scripts/obtain/dotnet-install.ps1 -outfile dotnet-install.ps1
+  - ps: .\dotnet-install.ps1 -Version 2.1.300-preview1-008174 -InstallDir $env:ProgramFiles/dotnet
+pull_requests:
+  do_not_increment_build_number: true
+branches:
+  only:
+  - master
+nuget:
+  disable_publish_on_pr: true
+build_script:
+  - ps: .\build.ps1 -IsOfficialBuild
+environment:
+  global:
+    DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+    DOTNET_CLI_TELEMETRY_OPTOUT: 1
+test: off
+os: Visual Studio 2017
+artifacts:
+  - path: '.artifacts\*.nupkg'
+    name: Packages
+    type: NuGetPackages
+deploy:
+  - provider: NuGet
+    name: myget
+    artifact: Packages
+    server: https://www.myget.org/F/andrewlock-ci/api/v2/package
+    symbol_server: https://www.myget.org/F/andrewlock-ci/api/v2/package
+    api_key:
+      secure: 7XbdNq38u0JLRNc9pRl35WPi5LZopfYcoCslf7Er/eTreR5mZnGbmY/lVQYcgxI2
+    on:
+      branch: master
+  - provider: NuGet
+    name: production
+    artifact: Packages
+    api_key:
+      secure: AAQlUu8bTe6OQSqOd8Uv143vSYoNix3/LhWmt8nulSUxfpbAUtmdUcZpvD2f9Owa
+    on:
+      branch: master
+      appveyor_repo_tag: true
+

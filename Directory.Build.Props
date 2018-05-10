@@ -1,0 +1,26 @@
+<Project>
+
+  <Import Project="version.props" />
+
+  <PropertyGroup>
+    <Authors>Andrew Lock</Authors>
+    <Product>dotnet-config2json</Product>
+    <Copyright>Copyright © Andrew Lock</Copyright>
+    <NeutralLanguage>en-GB</NeutralLanguage>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://spdx.org/licenses/MIT.html</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/andrewlock/dotnet-config2json</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/andrewlock/dotnet-config2json.git</RepositoryUrl>
+    <PackageReleaseNotes>See $(PackageProjectUrl)/blob/master/CHANGELOG.md#v$(VersionPrefix.Replace('.','')) for release notes.</PackageReleaseNotes>
+    <RepositoryType>git</RepositoryType>
+    <IsPackable>false</IsPackable>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <LangVersion>7.2</LangVersion>
+
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory).build\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(MSBuildThisFileDirectory).build\bin\$(MSBuildProjectName)</BaseOutputPath>
+  </PropertyGroup>
+
+</Project>

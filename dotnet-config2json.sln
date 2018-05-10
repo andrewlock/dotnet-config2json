@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FCDA33E9-B4BC-49A5-9C7D-A05A489BB816}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-config2json", "src\dotnet-config2json\dotnet-config2json.csproj", "{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8ED75282-BAAF-4BD1-9000-8A8C43E5F4E9}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}.Debug|x64.Build.0 = Debug|Any CPU
+		{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}.Debug|x86.Build.0 = Debug|Any CPU
+		{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}.Release|x64.ActiveCfg = Release|Any CPU
+		{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}.Release|x64.Build.0 = Release|Any CPU
+		{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}.Release|x86.ActiveCfg = Release|Any CPU
+		{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F} = {FCDA33E9-B4BC-49A5-9C7D-A05A489BB816}
+	EndGlobalSection
+EndGlobal
