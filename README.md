@@ -16,11 +16,11 @@ A simple tool to convert a web.config file to an appsettings.json file.
 
 ## Installation
 
-The latest release of dotnet-tinify requires the [2.1.300-rc1](https://www.microsoft.com/net/download/dotnet-core/sdk-2.1.300-rc1) .NET Core SDK or newer.
+The latest release of dotnet-config2json requires the [2.1.300-rc1](https://www.microsoft.com/net/download/dotnet-core/sdk-2.1.300-rc1) .NET Core SDK or newer.
 Once installed, run this command:
 
 ```
-dotnet install tool --global dotnet-tinify
+dotnet install tool --global dotnet-config2json
 ```
 
 ## Usage
