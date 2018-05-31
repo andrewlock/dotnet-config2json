@@ -55,18 +55,12 @@ namespace Config2Json
                     .Select(key =>
                     {
                         provider.TryGet(key, out var value);
-                        return new KeyValuePair<string, string>(key, value);
-                    });
 
-                if (!string.IsNullOrEmpty(SectionDelimiter))
-                {
-                    keyValues = keyValues.Select(
-                        kvp =>
-                        {
-                            var newKey = kvp.Key.Replace(SectionDelimiter, ":", StringComparison.OrdinalIgnoreCase);
-                            return new KeyValuePair<string, string>(newKey, kvp.Value);
-                        });
-                }
+                        var newKey = string.IsNullOrEmpty(SectionDelimiter)
+                            ? key
+                            : key.Replace(SectionDelimiter, ":", StringComparison.OrdinalIgnoreCase);
+                        return new KeyValuePair<string, string>(newKey, value);
+                    });
 
                 var config = new ConfigurationBuilder()
                     .AddInMemoryCollection(keyValues)
@@ -81,7 +75,7 @@ namespace Config2Json
 
                 //write to file 
                 var newPath = Path.ChangeExtension(file, "json");
-                var contents = JsonConvert.SerializeObject(jsonObject);
+                var contents = JsonConvert.SerializeObject(jsonObject, Formatting.Indented);
                 await File.WriteAllTextAsync(newPath, contents);
 
                 Console.WriteLine($"Migration of {fileName} to {Path.GetFileName(newPath)} complete");
