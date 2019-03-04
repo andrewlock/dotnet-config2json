@@ -51,7 +51,7 @@ namespace Config2Json
 
                 var provider = new ConfigFileConfigurationProvider(file, loadFromFile: true, optional: false, Console, parsersToUse);
                 provider.Load();
-                var keyValues = provider.GetChildKeys(Enumerable.Empty<string>(), null)
+                var keyValues = provider.GetFullKeyNames(null, new HashSet<string>())
                     .Select(key =>
                     {
                         provider.TryGet(key, out var value);
