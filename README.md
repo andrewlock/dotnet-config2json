@@ -20,7 +20,7 @@ The latest release of dotnet-config2json requires the [2.1.300](https://www.micr
 Once installed, run this command:
 
 ```
-dotnet install tool --global dotnet-config2json
+dotnet tool install --global dotnet-config2json
 ```
 
 ## Usage
