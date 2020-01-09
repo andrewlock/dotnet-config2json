@@ -1,7 +1,4 @@
-version: 0.2.2-rtm.{build}
-install:
-  - ps: iwr https://raw.githubusercontent.com/dotnet/cli/release/2.1.3xx/scripts/obtain/dotnet-install.ps1 -outfile dotnet-install.ps1
-  - ps: .\dotnet-install.ps1 -Version 2.1.300 -InstallDir $env:ProgramFiles/dotnet
+version: 0.3.0-rtm.{build}
 pull_requests:
   do_not_increment_build_number: true
 branches:
@@ -16,7 +13,7 @@ environment:
     DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
     DOTNET_CLI_TELEMETRY_OPTOUT: 1
 test: off
-os: Visual Studio 2017
+os: Visual Studio 2019
 artifacts:
   - path: '.artifacts\*.nupkg'
     name: Packages

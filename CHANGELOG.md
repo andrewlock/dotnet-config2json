@@ -1,5 +1,12 @@
 # Changelog
 
+## [v0.3.0]
+
+Bugfixes
+
+ - Fix Null reference exception [#4](https://github.com/andrewlock/dotnet-config2json/issues/4)
+ - Add support for additional runtimes - 2.1, 2.2, 3.1
+
 ## [v0.2.2]
 
 Bugfixes
