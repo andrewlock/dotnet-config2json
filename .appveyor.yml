@@ -32,7 +32,7 @@ deploy:
     name: production
     artifact: Packages
     api_key:
-      secure: AAQlUu8bTe6OQSqOd8Uv143vSYoNix3/LhWmt8nulSUxfpbAUtmdUcZpvD2f9Owa
+      secure: 8x0qw1lKfHdErlKppZtJX1sIH9lSGMw1LtHITKA/SM6nijTgakjL421iiZOTDckM
     on:
       branch: master
       appveyor_repo_tag: true
