@@ -16,7 +16,7 @@ A simple tool to convert a web.config file to an appsettings.json file.
 
 ## Installation
 
-The latest release of dotnet-config2json requires the [2.1.300](https://www.microsoft.com/net/download/dotnet-core/sdk-2.1.300) .NET Core SDK or newer.
+The latest release of dotnet-config2json requires the [2.1.300](https://www.microsoft.com/net/download/dotnet-core/sdk-2.1.300) .NET Core SDK or newer. It also works with .NET Core 2.2. and .NET Core 3.1.
 Once installed, run this command:
 
 ```
