@@ -145,7 +145,7 @@ namespace Microsoft.Extensions.Configuration.ConfigFile
                     {
                         _logger.WriteLine($"Could not parse the value attribute [{_valueName}] from [{element.ToString()}]. Using null as value...");
                     }
-                    else
+                    else if(value != null)
                     {
                         valueToAdd = value.Value;
                     }
