@@ -6,7 +6,7 @@
     <PackAsTool>true</PackAsTool>
     <AssemblyName>dotnet-config2json</AssemblyName>
     <Description>A simple tool for migrating a web.config file to an appsettings.json file</Description>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFrameworks>netcoreapp2.1;netcoreapp2.2;netcoreapp3.1</TargetFrameworks>
     <RootNamespace>dotnet-config2json</RootNamespace>
   </PropertyGroup>
 
