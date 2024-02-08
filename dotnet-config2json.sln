@@ -1,11 +1,11 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FCDA33E9-B4BC-49A5-9C7D-A05A489BB816}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-config2json", "src\dotnet-config2json\dotnet-config2json.csproj", "{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dotnet-config2json", "src\dotnet-config2json\dotnet-config2json.csproj", "{CFE2AB25-8C4A-4EC0-A567-D359DAD5246F}"
 EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
